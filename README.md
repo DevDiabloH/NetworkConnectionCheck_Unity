@@ -8,7 +8,7 @@ Note: Do not use this property to determine the actual connectivity.
 
 how to use?
 
-```
+```c#
 if(true == ConnectionCheck.IsConnected())
 {
    YourConnectedEvent(); 
