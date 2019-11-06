@@ -1,6 +1,6 @@
 # NetworkConnectionCheck_Unity
 
- Do not use Application.internetReachability
+ Do not use Application.internetReachability.
  
  https://docs.unity3d.com/ScriptReference/Application-internetReachability.html
  
@@ -10,19 +10,12 @@
 how to use?
 
 if(true == ConnectionCheck.IsConnected())
-
 {
-
-   YourConnectedEvent(); // ex) "The data was read normally."
-   
+   YourConnectedEvent(); 
 }
-
 else
-
 {
-
-   YourDisconnectedEvent(); // ex) "Please check your internet connection."
-   
+   YourDisconnectedEvent(); 
 }
 
 
