@@ -29,4 +29,20 @@ public static class ConnectionCheck
             return false;
         }
     }
+
+    public static IEnumerator EIsConneted()
+    {
+        string url = "https://www.google.com/";
+        WWW www = new WWW(url);
+        yield return www;
+
+        if (!string.IsNullOrEmpty(www.error))
+        {
+            Debug.Log("Network Error");
+        }
+        else
+        {
+            Debug.Log("Network Connected");
+        }
+    }
 }
